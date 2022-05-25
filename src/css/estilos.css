@@ -1,0 +1,139 @@
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 12px;
+    z-index: 0;
+                 
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f73026;      
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.448);
+    border-radius: 20px;       
+    border: 3px solid #f73026;
+    
+    
+}
+/* scrollbar */
+
+.cabecalho{
+    padding-top: 0%;
+    z-index: 1;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 2vw;
+}
+
+.cabecalho .titulo{
+    position: fixed;
+    color: var(--cor-titulo-fraco);
+    font-size: 3.0vw;
+    padding-right: 20px;  
+    line-height: 150%;
+    -webkit-text-stroke: 2px var(--cor-titulo-forte);
+}
+
+.selecao-de-personagens{
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 5%;
+    padding-right: 30vw;
+    
+}
+
+.selecao-de-personagens {
+  position: relative;
+  border-radius: 5px;
+  height: 100%;
+  padding: 10px;
+  width: 75vw;
+}
+
+.selecao-de-personagens .lista-de-personagens{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem{
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: var(--cor-padrao);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 10s ease infinite;
+    position: relative;
+
+}
+
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img{
+    width: 80%;
+    height: 80%;
+    left: 10px;
+    position: relative;
+}
+
+#gifs {
+    display: none;
+}
+
+h2{
+    color: var(--cor-padrao);
+    font-size: 12px;
+    text-align: left;
+    margin-left: 5%;
+    font-family: 'akshar', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}                                 
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover{
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.pokemon-animado {
+    position: fixed;
+    color: var(--cor-padrao);
+    font-family: 'command', sans-serif;
+    text-align: center;
+    bottom: 10%;
+    right: 0%;
+}
+
+h3{
+    font-size: 2vw;
+}
+
+.pokemon-animado img{
+    width: 23vw;
+    height: 100%;
+    object-fit: cover;
+}

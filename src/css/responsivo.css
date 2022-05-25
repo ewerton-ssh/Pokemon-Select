@@ -1,0 +1,11 @@
+@media (max-width: 1000px){
+    .pokemon-animado {
+        display: none;
+    }
+}
+
+@media(max-width: 360px){
+    .cabecalho .titulo{
+        font-size: 19px;
+    }
+}
