@@ -6,6 +6,6 @@ Pokemon Select é um aplicativo responsivo onde exibe uma animação, nome e tip
 #### CDN Traction (imagens da lista)
 #### LMS Network (animações dos Pokemon's)
 
-## Disponível apenas para os primeiros 151 Pokemons.
+### Disponível apenas para os primeiros 151 Pokemons.
 
-## Roda em qualquer navegador que seja baseado no Navegador Chrome.
+### Roda em qualquer navegador que seja baseado no Navegador Chrome.
