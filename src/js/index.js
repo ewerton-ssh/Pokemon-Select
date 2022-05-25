@@ -31,7 +31,8 @@ const buscarPokemon = () => {
         const ul = document.querySelector('[id="lista-de-personagens"]');
 
         ul.innerHTML = listaPokemons
-
+        
+        //interação de troca de animações, nome e tipo dos personagems
         const personagens = document.querySelectorAll('.pokedex')
         
         const imagemGrande = document.getElementById('personagem_grande');
