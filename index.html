@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Select</title>
+
+<!-- linking css -->
+    <link rel="stylesheet" href="./src/css/variaveis.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/fontes.css">
+    <link rel="stylesheet" href="./src/css/animacoes.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/background.css">
+    <link rel="stylesheet" href="./src/css/preloader.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAC5ubkAnZ2dAIKCggBmZmYAZ2dnUiUlJawAAADoAAAA7gAAAO4BAQHoKCgorG5ublJxcXEAjIyMAKWlpQDAwMAAubm5AKGhoQB4eHgaLCwssgAAAP8AAAD/LCws/0dHR/9HR0f/LCws/wAAAP8AAAD/MTExs4KCghqpqakAwMDAALm5uQChoaEZGhoa0wAAAP9CQkL/rq6u/9vb2//m5ub/5ubm/9ra2v+urq7/Q0ND/wAAAP8dHR3Tq6urGcHBwQDc3NwDLCwstgAAAP9oaGj/5OTk/+vr6//o6Oj/29vb/93d3f/p6en/6enp/+Tk5P9paWn/AAAA/zAwMLbj4+MDhoaGUQAAAP9GRkb/6Ojo/+vr6//Kysr/V1dX/x0dHf8kJCX/cHBx/9ra2//n5+f/6Ojo/0dHR/8AAAD/i4uLUR8fH7MFBQX/vr6+//j4+P/S0tL/IyMj/xoaGv90dHT/aGho/wsLC/9GRkb/5eXm//Ly9f+9vcD/BAQE/yEhIbMBAQHqKysr/8zMy//X19f/Xl5e/x0dHf/U1NT/7e3t/+/v7/+4uLj/CAgI/4yMjP/W1tb/zMzL/ysrK/8CAgLrAAAA7wQEAP8KCgD/CQkA/wAAAP9/f4D/+fn5/+Xl5f/m5ub/9/f3/1NTVP8CAgD/CgoA/woKAP8FBQH/AAAA7wAAAO8AACT/AABy/wAAcv8AAB7/fn53///////w8PD/8fHx//////9TU0v/AAAl/wAAc/8AAHP/AAAl/wAAAO8GBgHqAAA6/wAA//8AAP//AACT/yUlFf/b29n///////////+5ubb/DQ0C/wAApP8AAP//AAD//wAAO/8ICALqIiIfswAAA/8AALb/AADr/wAA4P8AAEn/GRkQ/2lpW/9eXlH/CwsD/wAAV/8AAOP/AADq/wAAt/8AAAP/JCQhs4WFhVEAAAD/AAA//wAA1/8AANb/AADQ/wAAf/8AAFv/AABc/wAAhP8AANL/AADW/wAA2P8AAEL/AAAA/4uLi1Hc3NwDLCwstgAAAP8AAFv/AADG/wAAyv8AAM3/AADP/wAAz/8AAM3/AADK/wAAx/8AAFz/AAAA/zAwL7fj4+MDubm5AJ+fnxoZGRjTAAAA/wAANf8AAI3/AACx/wAAuv8AALr/AACx/wAAjv8AADb/AAAA/x0dHNOnp6cav7+/ALm5uQCenp4AdHR0GiwsK7IAAAD/AAAA/wAAIv8AADj/AAA4/wAAIf8AAAD/AAAA/zMzM7KCgoIapaWlAL+/vwC5ubkAmpqaAH5+fgBkZGQAYWFhUiQkI6sGBgDoAAAA7gAAAO4ICAHoKiooq2xsbFJ0dHQAjY2NAKGhoQC/v78A+B8AAOAHAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADgBwAA+B8AAA==" rel="icon" type="image/x-icon" />
+  </head>
+
+<!-- preloader function  -->
+<body onLoad="loading()">
+
+<!-- div do preloader -->
+<div class="box-load">  
+  <div class="pre"></div>
+</div>
+
+<!-- background -->
+    <div class="area" >
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+<!-- background -->
+
+<!-- cabeçalho -->
+
+      <main>
+      <header class="cabecalho">
+          <h1 class="titulo">Pokemon Select</Select></h1>
+      </header>
+
+<!-- div lista de pokemons -->
+
+      <div class="selecao-de-personagens selecionado">
+        <ul id="lista-de-personagens" class="lista-de-personagens">
+        </ul>
+      </div>
+
+<!-- div pokemon animado, nome e tipo -->
+      <div class="pokemon-animado selecionado">
+        <img id="personagem_grande"></img>
+        <h3 id="nomePoke">bulbasaur</h3>
+        <h4 id="tipoPoke">grass</h4>
+      </div>  
+
+
+        </main>
+        <script src="./src/js/index.js"></script>
+
+    </div>
+</body>
+</html>
