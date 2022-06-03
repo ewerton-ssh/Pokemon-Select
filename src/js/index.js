@@ -13,7 +13,6 @@ const buscarPokemon = () => {
         requestPokemon.push(fetch(linkAPI(poke)).then(retorno => retorno.json()))
     }
 
-    
     Promise.all(requestPokemon)
     .then(pokemons => {
         const listaPokemons = pokemons.reduce((acumulador, pokemon) => {
@@ -40,10 +39,7 @@ const buscarPokemon = () => {
 
         personagens.forEach((personagem) => {
             personagem.addEventListener('mouseover', () => {
-                
-                
-                
-
+        
                 const dataName = personagem.getAttribute('numero');
 
                 const nomePoke= personagem.getAttribute('data-name');
@@ -59,7 +55,7 @@ const buscarPokemon = () => {
 
             })
         })
-    } )    
+    })    
 }
 
 buscarPokemon()
