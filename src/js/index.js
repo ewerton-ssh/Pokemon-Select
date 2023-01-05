@@ -20,8 +20,8 @@ const buscarPokemon = () => {
             acumulador += 
             `<ul class="personagem">
                 <h2 class="pokedex" id="numeroPersonagem" data-name="${pokemon.name}" tipo="${tipo.join(' | ')}" numero="${pokemon.id}">${pokemon.id}
-                <img class="lista-de-personagens"  src="https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png" />
-                <img id="gifs" src="http://www.lms.network/pokemon/pokedex/pkm/${pokemon.id}.gif"
+                <img class="lista-de-personagens"  src="https://raw.githubusercontent.com/monikode/pokedex/master/assets/pokemon/${pokemon.id}.png" />
+                <img id="gifs" src="https://projectpokemon.org/images/normal-sprite/${pokemon.name}.gif"
                 </h2>   
              </ul>`
             return acumulador
@@ -35,12 +35,12 @@ const buscarPokemon = () => {
         const personagens = document.querySelectorAll('.pokedex')
         
         const imagemGrande = document.getElementById('personagem_grande');
-        imagemGrande.src = `http://www.lms.network/pokemon/pokedex/pkm/1.gif`
+        imagemGrande.src = `https://professorlotus.com/Sprites/Bulbasaur.gif`
 
         personagens.forEach((personagem) => {
             personagem.addEventListener('mouseover', () => {
         
-                const dataName = personagem.getAttribute('numero');
+                const dataNumero = personagem.getAttribute('data-name')
 
                 const nomePoke= personagem.getAttribute('data-name');
                 const h2Nome = document.getElementById('nomePoke');
@@ -50,7 +50,7 @@ const buscarPokemon = () => {
                 const h3Tipo = personagem.getAttribute('tipo');
                 tipoPoke.innerHTML =  h3Tipo
                 
-                imagemGrande.src = `http://www.lms.network/pokemon/pokedex/pkm/${dataName}.gif`
+                imagemGrande.src = `https://professorlotus.com/Sprites/${dataNumero}.gif`
                 
 
             })
